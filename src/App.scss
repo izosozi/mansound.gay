@@ -1,0 +1,73 @@
+@use './_vars.scss' as *;
+.soundboard {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+
+
+  .soundboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    .soundboard-grid-item {
+      font-size: 1.1em;
+      justify-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      background-color: $hot-pink;
+      box-sizing: border-box;
+      border-radius: 50%;
+      box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4), 4px 4px 0px darken($hot-pink, 10%);
+      cursor: pointer;
+      padding: 1em;
+
+      &:hover {
+        background-color: darken($hot-pink, 10%);
+      }
+
+      &:active, &.active {
+        background-color: darken($hot-pink, 20%);
+        box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3);
+        transform: translate(4px, 4px);
+      }
+
+      label {
+        text-align: center;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  p a {
+    color: #480249;
+    background-color: #f3c2f4;
+    padding: 0 0.2em;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #fff6ff;
+    }
+  }
+}
