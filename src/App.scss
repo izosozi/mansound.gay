@@ -57,9 +57,11 @@
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: black;
   color: white;
+  padding: 0 1.5em;
+
   p a {
     color: #480249;
     background-color: #f3c2f4;
@@ -68,6 +70,7 @@ footer {
 
     &:hover {
       background-color: #fff6ff;
+      color: #480249;
     }
   }
 }

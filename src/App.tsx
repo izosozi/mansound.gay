@@ -40,6 +40,9 @@ function App() {
         <p>
           made by <a href="https://izosozi.xyz">izosozi</a>
         </p>
+        <p>
+          <a href="https://github.com/izosozi/mansound.gay">github</a>
+        </p>
       </footer>
     </>
   );
